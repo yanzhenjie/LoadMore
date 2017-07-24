@@ -7,10 +7,11 @@ QQ技术交流群：[547839514](https://jq.qq.com/?_wv=1027&k=4CHkvzr)
 
 本库是基于`ListView`和`GridView`的封装，`ListView`、`GridView`加载更多。  
 1. [为什么没有下拉刷新？](http://blog.csdn.net/yanzhenjie1003/article/details/75949335)  
-2. [RecyclerView怎么办？](https://github.com/yanzhenjie/LoadMore)
+2. [RecyclerView怎么办？](https://github.com/yanzhenjie/SwipeRecyclerView)
 
 # 截图
 对上面提到的效果都例举演示，但不是全部，更多效果可以下载Demo查看。  
+
 <image src="./image/1.gif" width="180px"/> <image src="./image/2.gif" width="180px"/> <image src="./image/3.gif" width="180px"/>
 
 # 如何使用
