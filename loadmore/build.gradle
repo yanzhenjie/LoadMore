@@ -1,0 +1,20 @@
+apply plugin: rootProject.ext.plugins.library
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.libraryMinSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+    }
+
+    resourcePrefix 'loadmore_'
+}
+
+dependencies {
+    compile rootProject.ext.dependencies.loading
+    compile rootProject.ext.dependencies.appCompat
+}
+
+apply from: "../maven.gradle"

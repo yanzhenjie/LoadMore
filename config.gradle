@@ -1,0 +1,58 @@
+ext {
+    plugins = [
+            library    : 'com.android.library',
+            application: 'com.android.application',
+            maven      : 'com.github.dcendents.android-maven',
+            bintray    : 'com.jfrog.bintray'
+    ]
+
+    android = [
+            applicationId       : "com.yanzhenjie.loadmore.sample",
+            compileSdkVersion   : 25,
+            buildToolsVersion   : "25.0.3",
+
+            libraryMinSdkVersion: 11,
+            sampleMinSdkVersion : 11,
+            targetSdkVersion    : 25,
+
+            versionCode         : 1,
+            versionName         : "1.0",
+    ]
+
+    maven = [
+            version       : "1.0.0",
+
+            siteUrl       : 'https://github.com/yanzhenjie/LoadMore',
+            gitUrl        : 'git@github.com:yanzhenjie/LoadMore.git',
+
+            group         : "com.yanzhenjie",
+
+            // project
+            packaging     : 'aar',
+            name          : 'LoadMore',
+            description   : 'LoadMore For Android',
+
+            // project.license
+            licenseName   : 'The Apache Software License, Version 2.0',
+            licenseUrl    : 'http://www.apache.org/licenses/LICENSE-2.0.txt',
+
+            // project.developers
+            developerId   : 'yanzhenjie',
+            developerName : 'yanzhenjie',
+            developerEmail: 'smallajax@foxmail.com',
+
+            // bintray
+            binrayLibrary : "LoadMore",
+            bintrayRepo   : "maven",
+            bintrayUser   : 'yolanda',
+            bintrayLicense: "Apache-2.0"
+    ]
+
+    dependencies = [
+            appCompat: 'com.android.support:appcompat-v7:25.3.1',
+            design   : 'com.android.support:design:25.3.1',
+
+            loading  : 'com.yanzhenjie:loading:1.0.2',
+            loadmore : 'com.yanzhenjie:loadmore:1.0.0'
+    ]
+}

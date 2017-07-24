@@ -1,0 +1,20 @@
+apply plugin: rootProject.ext.plugins.application
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.sampleMinSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+}
+
+dependencies {
+    compile rootProject.ext.dependencies.loadmore
+    compile rootProject.ext.dependencies.design
+    compile rootProject.ext.dependencies.appCompat
+}
